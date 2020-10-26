@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobPro</title>
+
+    <script src="./js/jquery.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <section class="header">
+        <div class="overlap-layer"></div>
+        <div class="fill-navbar-place"></div>
+        <div class="navbar">
+            <div class="container">
+                <div class="logo-and-menu">
+                    <h3 class="logo">JobPro.</h3>
+                    <h4 class="menu" id="open_menu">MENU</h4>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="nav-item active"><a href="">Home</a></li>
+                    <li class="nav-item"><a href="">Find Jobs</a></li>
+                    <li class="nav-item"><a href="">Candidates</a></li>
+                    <li class="nav-item"><a href="">Blog</a></li>
+                    <li class="nav-item"><a href="">Contact</a></li>
+                    <li class="nav-item button button-primary"><a href="">Post a Job</a></li>
+                    <li class="nav-item button button-secondary"><a href="">Want a Job</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-info" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+        data-aos-once="true">
+            <div class="container">
+                <h3 class="info-tip f-16">love what you do? thousands are looking for you!</h3>
+                <h1 class="info-jobs f-54"><span id="jobsnumber">0</span> Job Listed Here!</h1>
+                <p class="info-paragraph f-18">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                    there live the blind texts.
+                    Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                </p>
+                <div class="info-buttons">
+                    <div class="button button-primary"><a href="">Contact us</a></div>
+                    <div class="button button-secondary"><a href="">Search Job</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="search">
+        <div class="container">
+            <div class="buttons">
+                <div id="search-job-btn" class="active button button-secondary">Find a Job</div>
+                <div id="search-candidate-btn" class="button button-secondary">Find a Candidate</div>
+            </div>
+
+            <div class="search-options">
+                <form class="search-job-form" action="">
+                    <input type="text" name="name" placeholder="eg. Graphic Web Developer">
+                    <select name="category">
+                        <option value="" selected>Category</option>
+                        <option value="fulltime">Full Time</option>
+                        <option value="parttime">Part Time</option>
+                        <option value="freelance">Freelance</option>
+                        <option value="internship">Internship</option>
+                        <option value="temporary">Temporary</option>
+                    </select>
+                    <input type="text" name="location" placeholder="Location">
+                    <input class="button button-primary" type="submit" name="submit" value="Search">
+                </form>
+                <form class="search-candidate-form" action="">
+                    <input type="text" name="name" placeholder="eg. Adam Scott">
+                    <select name="category">
+                        <option value="" disabled selected>Category</option>
+                        <option value="fulltime">Full Time</option>
+                        <option value="parttime">Part Time</option>
+                        <option value="freelance">Freelance</option>
+                        <option value="internship">Internship</option>
+                        <option value="temporary">Temporary</option>
+                    </select>
+                    <input type="text" name="location" placeholder="location">
+                    <input class="button button-primary" type="submit" name="submit" value="Search">
+                </form>
+            </div>
+
+            <div class="keywords" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+            data-aos-delay="200" data-aos-once="true">
+                <div>Browse Top Keywords: </div>
+                <div class="keyword"><a href="" class="keyword-link">Designer</a></div>
+                <div class="keyword"><a href="" class="keyword-link">Web Developer</a></div>
+                <div class="keyword"><a href="" class="keyword-link">Digital Marketing</a></div>
+                <div class="keyword"><a href="" class="keyword-link">Php Developer</a></div>
+                <div class="keyword"><a href="" class="keyword-link">Business</a></div>
+                <div class="keyword"><a href="" class="keyword-link">Creative</a></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                    data-aos-delay="0" data-aos-once="true">
+                    <div class="service-icon"><i class="fas fa-shipping-fast"></i></div>
+                    <div class="service-title">Search Milions of Jobs</div>
+                    <p class="service-description">A small river named Duden flows by their place and supplies.</p>
+                </div>
+                <div class="col-md-3 col-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                    data-aos-delay="100" data-aos-once="true">
+                    <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+                    <div class="service-title">Easy To Manage Jobs</div>
+                    <p class="service-description">A small river named Duden flows by their place and supplies.</p>
+                </div>
+                <div class="col-md-3 col-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                    data-aos-delay="200" data-aos-once="true">
+                    <div class="service-icon"><i class="fas fa-pizza-slice"></i></div>
+                    <div class="service-title">Top Careers</div>
+                    <p class="service-description">A small river named Duden flows by their place and supplies.</p>
+                </div>
+                <div class="col-md-3 col-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                    data-aos-delay="300" data-aos-once="true">
+                    <div class="service-icon"><i class="fas fa-assistive-listening-systems"></i></div>
+                    <div class="service-title">Search Expert Candidates</div>
+                    <p class="service-description">A small river named Duden flows by their place and supplies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="categories">
+        <h3 class="header-line header-line-left header-line-right categories-header1">Job Categories</h3>
+        <h2 class="categories-header2 f-38">Explore by Category</h2>
+        <div class="owl-carousel owl-theme" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+        data-aos-delay="100" data-aos-once="true">
+            <div class="carousel-item">
+                <div class="carousel-item-icon"><i class="fas fa-assistive-listening-systems"></i></div>
+                <div class="carousel-item-title"><a href="">Website & Software</a></div>
+                <div class="carousel-item-info">143 Open position</div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-item-icon"><i class="fas fa-assistive-listening-systems"></i></div>
+                <div class="carousel-item-title"><a href="">Education & Training</a></div>
+                <div class="carousel-item-info">143 Open position</div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-item-icon"><i class="fas fa-assistive-listening-systems"></i></div>
+                <div class="carousel-item-title"><a href="">Graphic & UI/UX Design</a></div>
+                <div class="carousel-item-info">143 Open position</div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-item-icon"><i class="fas fa-assistive-listening-systems"></i></div>
+                <div class="carousel-item-title"><a href="">Accounting & Finance</a></div>
+                <div class="carousel-item-info">143 Open position</div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-item-icon"><i class="fas fa-assistive-listening-systems"></i></div>
+                <div class="carousel-item-title"><a href="">Website & Software</a></div>
+                <div class="carousel-item-info">143 Open position</div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-item-icon"><i class="fas fa-assistive-listening-systems"></i></div>
+                <div class="carousel-item-title"><a href="">Resturant & Food</a></div>
+                <div class="carousel-item-info">143 Open position</div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-item-icon"><i class="fas fa-assistive-listening-systems"></i></div>
+                <div class="carousel-item-title"><a href="">Health & Hospital</a></div>
+                <div class="carousel-item-info">143 Open position</div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="jobs">
+        <div class="container">
+            <h3 class="header-line header-line-right jobs-header1">Recently Added Jobs</h3>
+            <h2 class="jobs-header2 f-38">Featured Jobs Posts For This Week</h2>
+            <div class="row jobs-list">
+                <div class="col-sm-12 job-item" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                data-aos-delay="100" data-aos-once="true">
+                    <div class="row align-items-center">
+                        <div class="col-md-7 col-8">
+                            <h3 class="job-item-type">PartTime</h3>
+                            <h2 class="job-item-title"><a href="">Frontend Development</a></h2>
+                            <div class="row job-item-info">
+                                <div class="col-lg-3 job-item-info-company">
+                                    <span class="company-icon"><i class="fas fa-briefcase"></i></span>
+                                    <span class="company-name">Facebook, Inc.</span>
+                                </div>
+                                <div class="col-lg-3 job-item-info-location">
+                                    <span class="location-icon"><i class="fas fa-map-marker-alt"></i></span>
+                                    <span class="location-name">Western City, UK</span>
+                                </div>
+                                <div class="col-lg-3 job-item-info-tag">
+                                    <a href=""><div class="tag-box">Web Design</div></a>
+                               </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-2 col-4">
+                            <div class="d-flex justify-content-end">
+                                <div class="d-flex flex-column justify-content-center">
+                                    <div class="job-item-time d-flex justify-content-center"><div>20 Days</div></div>
+                                    <div class="job-item-salary d-flex justify-content-center"><div>$2000</div></div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-3 col">
+                            <div class="d-flex justify-content-end">
+                                <a href=""><div class="job-item-like"><i class="fas fa-heart"></i></div></a>
+                                <a href=""><div class="job-item-apply">Apply Job</div></a>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="get-started">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="get-started-title f-44">Get Started Your New Job With Us</h2>
+                    <p class="get-started-description">
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                        there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
+                        a large language ocean.
+                    </p>
+                    <div class="get-started-buttons">
+                        <a href=""><div class="button">Get Started</div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="testimonial">
+        <div class="container">
+            <h3 class="header-line header-line-right header-line-left testimonial-header1">testimonial</h3>
+            <h2 class="testimonial-header2 f-38">Happy Clients</h2>
+            <div class="owl-carousel owl-theme" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+            data-aos-delay="100" data-aos-once="true">
+            <div class="carousel-item">
+                <p class="carousel-item-description">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                    there live the blind texts.
+                </p>
+                <div class="carousel-item-publisher">
+                    <img class="publisher-image" src="./images/person_1.jpg" alt="person">
+                    <div class="publisher-data">
+                        <div class="publisher-name">Roger Scott</div>
+                        <div class="publisher-workposition">Marketing Manager</div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <p class="carousel-item-description">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                    there live the blind texts.
+                </p>
+                <div class="carousel-item-publisher">
+                    <img class="publisher-image" src="./images/person_2.jpg" alt="person">
+                    <div class="publisher-data">
+                        <div class="publisher-name">Roger Scott</div>
+                        <div class="publisher-workposition">Marketing Manager</div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <p class="carousel-item-description">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                    there live the blind texts.
+                </p>
+                <div class="carousel-item-publisher">
+                    <img class="publisher-image" src="./images/person_3.jpg" alt="person">
+                    <div class="publisher-data">
+                        <div class="publisher-name">Roger Scott</div>
+                        <div class="publisher-workposition">Marketing Manager</div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <p class="carousel-item-description">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                    there live the blind texts.
+                </p>
+                <div class="carousel-item-publisher">
+                    <img class="publisher-image" src="./images/person_1.jpg" alt="person">
+                    <div class="publisher-data">
+                        <div class="publisher-name">Roger Scott</div>
+                        <div class="publisher-workposition">Marketing Manager</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="candidates">
+        <div class="container">
+            <h3 class="header-line header-line-left header-line-right candidates-header1">Candidates</h3>
+            <h2 class="candidates-header2 f-38">Latest Candidates</h2>
+            <div class="owl-carousel owl-theme" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+            data-aos-delay="100" data-aos-once="true">
+            <div class="carousel-item">
+                <img class="carousel-item-image" src="./images/person_3.jpg" alt="">
+                <div class="carousel-item-info">
+                    <div class="candidate-name">Cloe Meyer</div>
+                    <div class="candidate-location">Western City, UK</div>
+                    <p class="candidate-description">
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-item-image" src="./images/person_4.jpg" alt="">
+                <div class="carousel-item-info">
+                    <div class="candidate-name">Cloe Meyer</div>
+                    <div class="candidate-location">Western City, UK</div>
+                    <p class="candidate-description">
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-item-image" src="./images/person_5.jpg" alt="">
+                <div class="carousel-item-info">
+                    <div class="candidate-name">Cloe Meyer</div>
+                    <div class="candidate-location">Western City, UK</div>
+                    <p class="candidate-description">
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-item-image" src="./images/person_6.jpg" alt="">
+                <div class="carousel-item-info">
+                    <div class="candidate-name">Cloe Meyer</div>
+                    <div class="candidate-location">Western City, UK</div>
+                    <p class="candidate-description">
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-item-image" src="./images/person_2.jpg" alt="">
+                <div class="carousel-item-info">
+                    <div class="candidate-name">Cloe Meyer</div>
+                    <div class="candidate-location">Western City, UK</div>
+                    <p class="candidate-description">
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-item-image" src="./images/person_1.jpg" alt="">
+                <div class="carousel-item-info">
+                    <div class="candidate-name">Cloe Meyer</div>
+                    <div class="candidate-location">Western City, UK</div>
+                    <p class="candidate-description">
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="blog">
+        <div class="container">
+            <h3 class="header-line header-line-left header-line-right blog-header1">our blog</h3>
+            <h2 class="blog-header2 f-38">Recent Blog</h2>
+            <div class="row blog-list">
+                <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                data-aos-delay="0" data-aos-once="true">
+                    <div class="blog-item">
+                        <a href=""><img class="blog-item-image" src="./images/image_1.jpg" alt="image"></a>
+                        <div class="blog-item-data">
+                            <div class="blog-item-metadata">
+                                <span class="date"><a href="">August 22, 2020</a></span>
+                                <span class="publisher"><a href="">Admin</a></span>
+                                <span class="comments">
+                                    <a href="">
+                                        <span class="icon"><i class="fas fa-comment"></i></span>
+                                        <span class="comments-number">3</span>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="blog-item-title"><a href="">Have you heard top candidates in jobpro</a></div>
+                            <div class="blog-item-description">
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                data-aos-delay="100" data-aos-once="true">
+                    <div class="blog-item">
+                        <a href=""><img class="blog-item-image" src="./images/image_2.jpg" alt="image"></a>
+                        <div class="blog-item-data">
+                            <div class="blog-item-metadata">
+                                <span class="date"><a href="">August 22, 2020</a></span>
+                                <span class="publisher"><a href="">Admin</a></span>
+                                <span class="comments">
+                                    <a href="">
+                                        <span class="icon"><i class="fas fa-comment"></i></span>
+                                        <span class="comments-number">3</span>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="blog-item-title"><a href="">Have you heard top candidates in jobpro</a></div>
+                            <div class="blog-item-description">
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                data-aos-delay="200" data-aos-once="true">
+                    <div class="blog-item">
+                        <a href=""><img class="blog-item-image" src="./images/image_3.jpg" alt="image"></a>
+                        <div class="blog-item-data">
+                            <div class="blog-item-metadata">
+                                <span class="date"><a href="">August 22, 2020</a></span>
+                                <span class="publisher"><a href="">Admin</a></span>
+                                <span class="comments">
+                                    <a href="">
+                                        <span class="icon"><i class="fas fa-comment"></i></span>
+                                        <span class="comments-number">3</span>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="blog-item-title"><a href="">Have you heard top candidates in jobpro</a></div>
+                            <div class="blog-item-description">
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                data-aos-delay="300" data-aos-once="true">
+                    <div class="blog-item">
+                        <a href=""><img class="blog-item-image" src="./images/image_4.jpg" alt="image"></a>
+                        <div class="blog-item-data">
+                            <div class="blog-item-metadata">
+                                <span class="date"><a href="">August 22, 2020</a></span>
+                                <span class="publisher"><a href="">Admin</a></span>
+                                <span class="comments">
+                                    <a href="">
+                                        <span class="icon"><i class="fas fa-comment"></i></span>
+                                        <span class="comments-number">3</span>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="blog-item-title"><a href="">Have you heard top candidates in jobpro</a></div>
+                            <div class="blog-item-description">
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="subscribe">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-11">
+                    <h2 class="subscribe-header f-38">Subcribe to our Newsletter</h2>
+                    <p class="subscribe-description">
+                        Far far away, behind the word mountains,
+                        far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in
+                    </p>
+                    <form class="subscribe-form" action="">
+                        <input type="text" class="email" placeholder="Enter email address">
+                        <input type="text" class="submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg col-md-3 col-12 footer-item justify-content-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                data-aos-delay="0" data-aos-once="true">
+                    <h3 class="footer-item-header">Jobpro.</h3>
+                    <p class="footer-item-paragraph">
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                        there live the blind texts.
+                    </p>
+                    <div class="footer-item-icons" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                    data-aos-delay="200" data-aos-once="true">
+                        <span class="icon"><i class="fab fa-twitter"></i></span>
+                        <span class="icon"><i class="fab fa-facebook-f"></i></span>
+                        <span class="icon"><i class="fab fa-instagram"></i></span>
+                    </div>
+                </div>
+
+                <div class="col-lg col-md-3 col-12 footer-item" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                data-aos-delay="100" data-aos-once="true">
+                    <h3 class="footer-item-header">Employees</h3>
+                    <div class="footer-item-link"><a href="">Browse Candidates</a></div>
+                    <div class="footer-item-link"><a href="">Post a Job</a></div>
+                    <div class="footer-item-link"><a href="">Employer Listing</a></div>
+                    <div class="footer-item-link"><a href="">Resume Page</a></div>
+                    <div class="footer-item-link"><a href="">Dashboard</a></div>
+                    <div class="footer-item-link"><a href="">Job Packages</a></div>
+                </div>
+
+                <div class="col-lg col-md-3 col-12 footer-item" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                data-aos-delay="200" data-aos-once="true">
+                    <h3 class="footer-item-header">Candidate</h3>
+                    <div class="footer-item-link"><a href="">Browse Jobs</a></div>
+                    <div class="footer-item-link"><a href="">Submit Resume</a></div>
+                    <div class="footer-item-link"><a href="">Dashboard</a></div>
+                    <div class="footer-item-link"><a href="">Browse Categories</a></div>
+                    <div class="footer-item-link"><a href="">My Bookmarks</a></div>
+                    <div class="footer-item-link"><a href="">Candidate Listing</a></div>
+                </div>
+
+                <div class="col-lg col-md-3 col-12 footer-item" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                data-aos-delay="300" data-aos-once="true">
+                    <h3 class="footer-item-header">Account</h3>
+                    <div class="footer-item-link"><a href="">My Account</a></div>
+                    <div class="footer-item-link"><a href="">Sign In</a></div>
+                    <div class="footer-item-link"><a href="">Create Account</a></div>
+                    <div class="footer-item-link"><a href="">Checkout</a></div>
+                </div>
+
+                <div class="col-lg col-md-8 col-12 footer-item" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                data-aos-delay="400" data-aos-once="true">
+                    <h3 class="footer-item-header">Have a Questions?</h3>
+                    <div class="footer-item-question">
+                        <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <p class="footer-item-paragraph">
+                            203 Fake St. Mountain View, San Francisco, California, USA
+                        </p>
+                    </div>
+
+                    <a href="">
+                        <div class="footer-item-question">
+                            <span class="icon"><i class="fas fa-phone-alt"></i></span>
+                            <p class="footer-item-paragraph">
+                                +2 392 3929 210
+                            </p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="footer-item-question">
+                            <span class="icon"><i class="fas fa-paper-plane"></i></span>
+                            <p class="footer-item-paragraph">
+                                info@yourdomain.com
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="copy-right">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <h3>Copyright ©2020 All rights reserved | This template is made with
+                        <span><i class="fas fa-heart"></i></span> by <span class="copy-right-link"><a href="">Colorlib</a></span></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
